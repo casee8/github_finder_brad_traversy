@@ -56,9 +56,9 @@ class App extends Component {
 
     return (
       <div className='App'>
-        <Navbar title='Github Finder' icon='fab fa-github' />
-        <div className='container'>
-          <Router>
+        <Router>
+          <Navbar title='Github Finder' icon='fab fa-github' />
+          <div className='container'>
             <Routes>
               <Route
                 exact
@@ -78,8 +78,8 @@ class App extends Component {
               />
               <Route exact path='/about' element={<About />} />
             </Routes>
-          </Router>
-        </div>
+          </div>
+        </Router>
       </div>
     );
   }
